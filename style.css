@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container,
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  outline: 6px brown solid;
+}
+
+.tile {
+  outline: 3px brown solid;
+  text-align: center;
+  font-size: 5rem;
+  padding: 3px;
+  width: 17vw;
+  height: 17vw;
+}
